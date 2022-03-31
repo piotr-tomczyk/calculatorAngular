@@ -42,17 +42,16 @@ button:hover {
     grid-column: 1 / -1;
     background-color: #F69A06;
     border-radius: 10px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    flex-direction: column;
+    align-self: end;
+    text-align: right;
     padding: 10px;
     margin-bottom: -10px;
     word-wrap: break-word;
     word-break: break-all;
     font-size: 2em;
     color: white;
-    max-height: 8vh;
+    max-height: auto;
+    min-height: 1em;
 }
 
 .flex {
