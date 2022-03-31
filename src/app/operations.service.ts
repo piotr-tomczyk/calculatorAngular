@@ -13,7 +13,7 @@ export class OperationsService {
   prevOperation: string = '';
   buttons = [
     'AC', '+/-', '%', '÷',
-    '7', '8', '9', 'X',
+    '7', '8', '9', '*',
     '4', '5', '6', '-',
     '1', '2', '3', '+',
     '0', '.', '='
@@ -69,7 +69,7 @@ export class OperationsService {
       this.eq();
     }
 
-    if (id == "X") {
+    if (id == "*") {
       if (!this.isOperation && this.wasNumber)
         this.result = this.mul(this.result, this.view);
       this.isOperation = true;

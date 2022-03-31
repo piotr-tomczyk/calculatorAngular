@@ -8,5 +8,4 @@ import { OperationsService } from '../operations.service';
 })
 export class CalcViewComponent {
   constructor(public operationsService: OperationsService) { }
-
 }

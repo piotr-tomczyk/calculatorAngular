@@ -12,21 +12,26 @@
 .calc-grid {
     display: grid;
     grid-template-columns: repeat(4, 8vh);
-    grid-template-rows: repeat(6, 8vh);
-    gap: 0.7rem;
-    height: 100vh;
+    grid-template-rows: minmax(120px, auto) repeat(6, 8vh);
+    gap: 0.5em;
+    min-height: 100vh;
     justify-content: center;
     align-content: center;
     margin: 0px;
     padding: 0px;
+    background-color: darkgreen;
 }
 
 button {
+    display: inline-block;
     color: white;
     border-style: none;
-    border-radius: 50%;
+    cursor: pointer;
+    border-radius: 200%;
     font-size: 1em;
     background-color: orange;
+    min-width: 2em;
+    min-height: 2em;
 }
 
 button:hover {
@@ -34,11 +39,20 @@ button:hover {
 }
 
 .view {
+    grid-column: 1 / -1;
+    background-color: #F69A06;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: -10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 2em;
     color: white;
-    grid-column: 1 / span 4;
-    font-size: 0.85em;
-    justify-self: flex-end;
-    padding-right: 0.9em;
+    max-height: 8vh;
 }
 
 .flex {
@@ -49,7 +63,7 @@ button:hover {
 }
 
 #a16 {
-    grid-column: 1 / span 2;
+    grid-column: span 2;
     border-radius: 2em;
     text-align: right;
     padding-right: 1em;

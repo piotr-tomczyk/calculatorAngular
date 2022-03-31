@@ -1,7 +1,7 @@
 <div class="parent">
     <div class="calc-grid">
-        <div class="view flex" *ngIf="!operationsService.isOver">{{operationsService.view}}</div>
-        <div class="view flex" *ngIf="operationsService.isOver">{{operationsService.result}}</div>
+        <div class="view" *ngIf="!operationsService.isOver">{{operationsService.view}}</div>
+        <div class="view" *ngIf="operationsService.isOver">{{operationsService.result}}</div>
         <button *ngFor="let button of operationsService.buttons; let i = index" type="button" [id]="'a'+ i"
             (click)="operationsService.handleButton(button)">
             {{button}}
