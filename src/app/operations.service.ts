@@ -40,6 +40,7 @@ export class OperationsService {
         this.result /= 10;
       else
         this.view /= 10;
+      this.prevOperation = ".";
     }
     if (id == ".") {
       this.prevOperation = ".";
