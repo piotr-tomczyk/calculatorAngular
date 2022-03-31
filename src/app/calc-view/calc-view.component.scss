@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.parent {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 8vh);
+    grid-template-rows: repeat(6, 8vh);
+    gap: 0.7rem;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    color: white;
+    border-style: none;
+    border-radius: 50%;
+    font-size: 1em;
+    background-color: orange;
+}
+
+button:hover {
+    filter: brightness(75%);
+}
+
+.view {
+    color: white;
+    grid-column: 1 / span 4;
+    font-size: 0.85em;
+    justify-self: flex-end;
+    padding-right: 0.9em;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#a16 {
+    grid-column: 1 / span 2;
+    border-radius: 2em;
+    text-align: right;
+    padding-right: 1em;
+}
+
+#a3,
+#a7,
+#a11,
+#a15,
+#a18 {
+    background-color: #F69A06;
+}
+
+#a4,
+#a5,
+#a6,
+#a8,
+#a9,
+#a10,
+#a12,
+#a13,
+#a14,
+#a16,
+#a17 {
+    background-color: #313131;
+}
+
+#a0,
+#a1,
+#a2 {
+    background-color: #A0A0A0;
+}
+
+@media only screen and (max-width: 600px) {
+    button {
+        font-size: 0.5em;
+    }
+
+    .view {
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    button {
+        font-size: 0.5em;
+    }
+
+    .view {
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (min-height: 1370px) {
+    button {
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 1370px) {
+    button {
+        font-size: 0.5em;
+    }
+
+    .view {
+        font-size: 0.7em;
+    }
+}

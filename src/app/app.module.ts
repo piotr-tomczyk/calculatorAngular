@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CalcViewComponent } from './calc-view/calc-view.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalcViewComponent
   ],
   imports: [
     BrowserModule,
